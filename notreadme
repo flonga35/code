@@ -1,7 +1,59 @@
 
 public class Scanner { 
   public static void main(String[] args) {
-  	String name = "canne";
+  	String name = "canne"; 
+    //made a variable called name
   	System.out.println("Hello "+ name + "!");
+    //printed hello canne! 
   	}
   }
+public class HelloWorld
+{
+	public static void main(String args[])
+	{
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Hello FRC 467!");
+		}
+	}
+}
+//first homework
+public class Multiplication {
+	public static void main(String[] args) {
+	  for (int i = 1; i < 11; i++) {
+		  for(int j = 1; j < 11; j++) {
+		  System.out.println(i + " times " + j + "  equals:" + i*j);
+	    }
+	  }
+  }
+}
+//second
+
+public class Buzz {
+	public static void main(String[] args) {
+	  for (int i = 0; i < 100; i++) {
+      if ( i % 3 == 0 ) {
+		    System.out.println("Buzz");
+      }
+        else {
+        System.out.println(i);
+	    }
+	  }
+  }
+}
+
+public class FizzBuzz {
+	public static void main(String[] args) {
+	  for (int i = 0; i < 100; i++) {
+    if 
+      if ( i % 3 == 0 ) {
+		    System.out.println(Output);
+      }
+        else {
+        System.out.println(i);
+	    }
+	  }
+  }
+}
+ 
+
+
