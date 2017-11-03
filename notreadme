@@ -64,20 +64,17 @@ public class FizzBuzz {
 	}
 }  
 		  
-// doesn't quite work yet
-public class Factorial {
-	public static void main(String[] args) {
-		for ( double i = 0; i < 31; i++ ) {
-			for ( double j = 1 ) {
-				double j = i * j;
-				System.out.println(j);
-				}
-		}
-	}
-}
+public class Factorial{  
+ public static void main(String[] args){  
+  float i, j = 1;  
+  for( i = 1; i <= 30; i++ ){    
+      j = j * i;    
+    System.out.println("Factorial of " + i + " is: " + j);
+  }    
+      
+ }  
+}  
 
- 
- 
 
      
      
