@@ -88,6 +88,32 @@ public class Factorial{
 *  }
 *}
 **/
-     
-     
-
+import java.util.Scanner;
+import java.util.Random;
+ 
+public class H_L_GuessGame {
+ 
+   public static void main(String[] args) {
+ 
+      Random random = new Random();
+      Scanner scanner = new Scanner(System.in);
+ 
+      int number = random.nextInt(100)+1;
+      int guess = 0;
+      int count=0;
+ 
+      while (guess!=number) {
+         count=count+1;
+         System.out.print("Guess my secret number between 1 and 100: ");
+         guess = scanner.nextInt();
+         if (guess<number) {
+            System.out.println("Too low, try again");
+         } else if (guess>number) {
+            System.out.println("Too high, try again");
+         } else {
+            System.out.println("Correct, the secret number was " + number);
+         }
+      }
+      System.out.println("It took you " + count + " trys.");
+   }
+}
