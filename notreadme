@@ -117,3 +117,52 @@ public class H_L_GuessGame {
       System.out.println("It took you " + count + " trys.");
    }
 }
+
+import java.util.Scanner;
+
+public class AdvancedHLGame {
+ 
+   public static void main(String[] args) {
+ 
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Input a secret number between 1 and 100: ");
+ 
+      int number = scanner.nextInt();
+      int guess = 50;
+      int subadd = 50;
+      int count = 0;
+ 
+      while (guess!=number) {
+         count=count+1;
+	 subadd = subadd/2;
+         if (count > 5 ) {
+         	if (guess < number) {
+         		System.out.println(guess + " was too low, I'll try again");
+         		guess = guess + 2;
+         		System.out.println("Is it " + guess +" ?" );
+         	}
+         	else if (guess > number) {
+         	System.out.println(guess +" was too high, I'll try again");
+         		guess = guess - 1;
+         		System.out.println("Is it " + guess +" ?" );
+         	}
+         }
+         
+       else {
+         if (guess<number) {
+         	System.out.println(guess + " was too low, I'll try again");
+	 	guess = guess + subadd;
+         	System.out.println("Is it " + guess +" ?" );
+         } else if (guess>number) {
+         	System.out.println(guess +" was too high, I'll try again");
+	 	guess = guess - subadd;
+           	System.out.println("Is it " + guess +" ?" );
+         }
+            
+         
+         }
+      }
+      System.out.println("Got it, the secret number was " + number);
+      System.out.println("It took me " + count + " trys.");
+   }
+}
