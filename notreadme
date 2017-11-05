@@ -230,6 +230,14 @@ public class BasicCalc {
     }
 }
 	
+import java.util.*
+
+public class ChangeChallenge {
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	int NumberOfItems = scanner.nextInt;
+	
+	
 		
 		
 		
