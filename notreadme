@@ -264,8 +264,22 @@ public class ChangeChallenge {
 }
 		
 			
-		
-	
+public class FactorialExample2{  
+ public static float factorial(float n){    
+  if (n == 0)    
+    return 1;    
+  else    
+    return(n * factorial(n-1));    
+ }    
+ public static void main(String args[]){  
+  float fact=1;  
+  int number=30;//It is the number to calculate factorial
+for( int i = 1; i <= number; i++ ){
+  fact = factorial(i);   
+  System.out.println("Factorial of "+i+" is: "+fact);  
+  }  
+ }  
+}  
 		
 		
 		
