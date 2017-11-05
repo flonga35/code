@@ -166,3 +166,70 @@ public class AdvancedHLGame {
       System.out.println("It took me " + count + " trys.");
    }
 }
+
+import java.util.Scanner;
+
+public class MinOfab{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Type a number:");
+		int a = scanner.nextInt();
+		System.out.print("Type a second number:");
+		int b = scanner.nextInt();
+		int c = minFunction(a, b);
+		System.out.println("The minimum of the two is " + c);
+	}
+	public static int minFunction(int n1, int n2) {
+		
+		int min = 0;
+		if (n1 > n2) 
+		min = n2;
+		
+		else if (n2 > n1) 
+		min = n1;
+		
+		
+		return min;
+	}
+}	
+
+import java.util.Scanner;
+public class BasicCalc {
+    public static void main(String args[]) {
+    	Scanner scanner = new Scanner(System.in);
+        int br = 0;
+        while ( br == 0 ) {
+        System.out.println("Type 1 for addition, 2 for subtraction, 3 for multiplication, 4 to break, and any other number for division:");
+        int operation=scanner.nextInt();
+      if (operation == 5 ) {
+     		br = 1;
+     		}       
+        System.out.println("type a number ");
+    	int x=scanner.nextInt();
+        System.out.print("type another number ");
+        int y=scanner.nextInt();
+   	if (operation == 1) {
+        	int z=x+y;
+        	System.out.println("Sum of " + x + " and " +  y + " is " + z);
+        	}
+        else if (operation == 2) {
+        	int z = x-y;
+        	System.out.println("Difference of " + x + " and " +  y + " is " + z);
+     		}
+     	else if (operation == 3) {
+     		int z = x*y;
+     		System.out.println("Product of " + x + " and " +  y + " is " + z);
+     		}
+     
+        else if (operation == 4 ){
+        	double z=(double)(x)/(double)(y);
+        	System.out.println("Quotient of " + x + " and " +  y + " is " + z);
+        	}
+        	
+        }
+    }
+}
+	
+		
+		
+		
