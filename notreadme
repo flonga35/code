@@ -280,6 +280,9 @@ for( int i = 1; i <= number; i++ ){
   }  
  }  
 }  
+
+public class puppy {
+	public static void main(String[] args)
 		
 		
 		
