@@ -301,7 +301,7 @@ public class Puppy{
 	}
 	public static void main(String[] args){
 
-	Puppy myPuppy = new Puppy( "tommy" ):
+	Puppy myPuppy = new Puppy( "tommy" );
 	myPuppy.setAge(2);
 	myPuppy.getAge( );
 	System.out.println("Varaible value :" + myPuppy.puppyAge );
@@ -318,15 +318,27 @@ public class Kitten{
 		kittenAge = age;
 	}
 	public int getAge( ){
-		System.out.println("Puppy's age is :" + puppyAge);
+		System.out.println("Kitten's age is :" + kittenAge);
 		return kittenAge;
 	}
 	public static void main(String[] args){
 
-	Kitten myKitten = new Kitten( "tommy" ):
-	myKitten.setAge(2);
+	Kitten myKitten = new Kitten( "ymmoty" );
+	myKitten.setAge(1);
 	myKitten.getAge( );
-	System.out.println("Varaible value :" + myKitten.kkittenAge );
+	System.out.println("Varaible value :" + myKitten.kittenAge );
 	}
 }
 
+import Kitten
+import Puppy
+public class PetNursery{
+	
+	public static void main(String[] args){
+
+	Kitten myKitten = new Kitten( "ymmoty" );
+	myKitten.setAge(1);
+	myKitten.getAge( );
+	System.out.println("Varaible value :" + myKitten.kittenAge );
+	}
+}
