@@ -340,5 +340,12 @@ public class PetNursery{
 	myKitten.setAge(1);
 	myKitten.getAge( );
 	System.out.println("Varaible value :" + myKitten.kittenAge );
+	
+	
+	Puppy myPuppy = new Puppy( "tommy" );
+	myPuppy.setAge(2);
+	myPuppy.getAge( );
+	System.out.println("Varaible value :" + myPuppy.puppyAge );
+	
 	}
 }
