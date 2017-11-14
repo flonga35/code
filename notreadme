@@ -259,8 +259,7 @@ public class ChangeChallenge {
 	int NumOfNs = (int)((TotalPrice - NumOfDs - (NumOfQs*.25) - (NumOfDimes*.1))/.05);
 	System.out.println(NumOfNs + ", nickel(s),");
 	int NumOfPs = (int)((TotalPrice - NumOfDs - (NumOfQs*.25) - (NumOfDimes*.1) - (NumOfNs*.05))/.01);
-	System.out.println(NumOfPs + ", penny(s),");
-	}
+	System.out.println(NumOfPs + ", penny(s),"	}
 }
 		
 			
@@ -308,3 +307,26 @@ public class Puppy{
 	System.out.println("Varaible value :" + myPuppy.puppyAge );
 	}
 }
+
+public class Kitten{
+	int kittenAge;
+	public Kitten(String name){
+		System.out.println("Name chose is :" + name );
+	}
+
+	public void setAge( int age ){
+		kittenAge = age;
+	}
+	public int getAge( ){
+		System.out.println("Puppy's age is :" + puppyAge);
+		return kittenAge;
+	}
+	public static void main(String[] args){
+
+	Kitten myKitten = new Kitten( "tommy" ):
+	myKitten.setAge(2);
+	myKitten.getAge( );
+	System.out.println("Varaible value :" + myKitten.kkittenAge );
+	}
+}
+
