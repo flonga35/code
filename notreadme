@@ -281,6 +281,12 @@ for( int i = 1; i <= number; i++ ){
  }  
 }  
 
+/*1. Create and run the Puppy example class above.
+
+2. Add a Kitten class to your program. Then in the main of your program create and name a Kitten. Next get the age of the Kitten. Then also name a Puppy and get the age of the Puppy.
+
+3. Create another class called “PetNursery”. The PetNursery should contain a Kitten and a Puppy. Add a method to the PetNursery class called “describeAnimals()”. This method should print out the type, name, and age of each animal in the nursery. Finally, rewrite your main method to create a PetNursery and then call describeAnimals() to print out a description of the animals in the nursery.
+*/
 public class Puppy{
 	int puppyAge;
 	public Puppy(String name){
@@ -297,4 +303,8 @@ public class Puppy{
 	public static void main(String[] args){
 
 	Puppy myPuppy = new Puppy( "tommy" ):
-	myPuppy
+	myPuppy.setAge(2);
+	myPuppy.getAge( );
+	System.out.println("Varaible value :" + myPuppy.puppyAge );
+	}
+}
