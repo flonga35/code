@@ -260,7 +260,7 @@ public class ChangeChallenge {
 	int NumOfNs = (int)((TotalPrice - NumOfDs - (NumOfQs*.25) - (NumOfDimes*.1))/.05);
 	System.out.println(NumOfNs + ", nickel(s),");
 	int NumOfPs = (int)((TotalPrice - NumOfDs - (NumOfQs*.25) - (NumOfDimes*.1) - (NumOfNs*.05))/.01);
-	System.out.println(NumOfPs + ", penny(s),"	}
+	System.out.println(NumOfPs + ", penny(s),")	}
 }
 		
 			
