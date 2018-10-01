@@ -1,6 +1,7 @@
 
 public class Scanner { 
   public static void main(String[] args) {
+  // usually starts off with public static void main(String[] args) 
   	String name = "canne"; 
     //made a variable called name
   	System.out.println("Hello "+ name + "!");
