@@ -396,7 +396,7 @@ public class PetNursery{
 	}
 }
 ____________________________________________________________________________________________________________________________
-life according to patrick
+//life according to patrick
 
 import java.util.Scanner;
 
@@ -445,4 +445,25 @@ public class ChangeChallenge {
  }
 }
 
+//life according to others
 
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class BigIntegerFactorials
+{
+
+	public static void main(Strings args[])
+	{
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Until what factorial do you want the answer to? ");
+	int num = scanner.nextInt():
+	BigInteger fact = new BigInteger("1");
+	for (int i = 1; i <= num; i++)
+	{
+		fact = fact.multiply(new BigInteger(i + ""));
+		Ststem.out.println(fact);
+		
+	}
+}
+}
