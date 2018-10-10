@@ -453,16 +453,16 @@ import java.util.Scanner;
 public class BigIntegerFactorials
 {
 
-	public static void main(Strings args[])
+	public static void main(String[] args)
 	{
 	Scanner scanner = new Scanner(System.in);
 	System.out.print("Until what factorial do you want the answer to? ");
-	int num = scanner.nextInt():
+	int num = scanner.nextInt();
 	BigInteger fact = new BigInteger("1");
 	for (int i = 1; i <= num; i++)
 	{
 		fact = fact.multiply(new BigInteger(i + ""));
-		Ststem.out.println(fact);
+		System.out.println(fact);
 		
 	}
 }
