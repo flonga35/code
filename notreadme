@@ -395,3 +395,54 @@ public class PetNursery{
 	
 	}
 }
+____________________________________________________________________________________________________________________________
+life according to patrick
+
+import java.util.Scanner;
+
+public class ChangeChallenge {
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("How many items do you have?");
+    int NumberOfItems = scanner.nextInt();
+    
+    
+    double TotalPrice = 0;
+    
+    
+    for( int i = 1; i <= NumberOfItems; i++ ) {
+        System.out.println("What is the price of item " + i + ":");
+        double ItemPrice = scanner.nextDouble();
+        //let the cashier enter a series of numbers representing the costs of items.
+        TotalPrice = TotalPrice + ItemPrice;
+        
+        //will add the costs of the items together to print out the total amount.
+        }
+    System.out.println("The total cost is " + TotalPrice);
+    System.out.println("How much did you pay?");
+    double CashPaid = scanner.nextDouble();
+    double Change = (double)(CashPaid - TotalPrice);
+    System.out.println("The change is $" + Change);
+    System.out.println("You can get the change by:"); 
+          int NumOfTs = (int)(Change/10);
+          if (NumOfTs != 0){
+          System.out.println(NumOfTs + “, ten dollar bill(s),”);
+    int NumOfDs = (int)((Change - (NumOfTs*10)));
+    if (NumOfDs != 0){
+    System.out.println(NumOfDs + ", one dollar bill(s),");
+    int NumOfQs = (int)((Change - (NumOfTs*10) -( (NumOfDs)/.25));
+    if (NumOfQs != 0){
+    System.out.println(NumOfQs + ", quarter(s),");
+    int NumOfDimes = (int)((Change - (NumOfTs*10) - (NumOfDs) - (NumOfQs*.25))/.1);
+    if (NumOfDimes != 0){
+    System.out.println(NumOfDimes + ", dime(s),");
+    int NumOfNs = (int)((Change - (NumOfTs*10) - (NumOfDs) - (NumOfQs*.25) - (NumOfDimes*.1))/.05);
+    if (NumOfNs != 0){
+    System.out.println(NumOfNs + ", nickel(s),");
+    int NumOfPs = (int)((Change - (NumOfTs*10) - (NumOfDs*.1) - (NumOfQs*.25) - (NumOfDimes*.1) - (NumOfNs*.05))/.01);
+    if (NumOfPs != 0){
+    System.out.println(NumOfPs + ", penny(s),");
+ }
+}
+
+
