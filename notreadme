@@ -556,6 +556,65 @@ strip.show();
 }
 }
 ____________________________________________________________________________________________________________________________________
+//blue and green
+#include ,Adafruit_NeoPixel.h>
+#ifdef _AVR_
+#include <avr/power.h>
+#endif
+
+intconst NUM_PIXELS = 12;
+int8_t const PIN = 13;
+Adafruit_NeoPixel strip;
+
+void setup()
+{
+  strip = Adafruit_NeoPixel(NUM_PIXELS, PIN, NEO_GRB+NEO_KHZ800);
+  strip.begin();
+  strip.show();
+}
+
+void loop() {
+
+for(int i=0; i<12; i=i+2)
+strip.setPixelColor( i, 0,255,0);
+strip.show();
+for(int j=1; j<12; j=j+2)
+{
+strip.setPixelColor(i, 0,0,255);
+strip.show
+}
+}
+________________________________________________________________________________________________________________________________________
+//white to black
+
+#include ,Adafruit_NeoPixel.h>
+#ifdef _AVR_
+#include <avr/power.h>
+#endif
+
+intconst NUM_PIXELS = 12;
+int8_t const PIN = 13;
+Adafruit_NeoPixel strip;
+
+void setup()
+{
+  strip = Adafruit_NeoPixel(NUM_PIXELS, PIN, NEO_GRB+NEO_KHZ800);
+  strip.begin();
+  strip.show();
+}
+
+void loop() {
+
+
+for(int i=0; i<12; i++) 
+{
+int a = 255 - 22x;
+strip.setPixelColor(x, a, a, a)
+
+strip.show();
+}
+}
+_______________________________________________________________________________________________________________________________________
 #include ,Adafruit_NeoPixel.h>
 #ifdef _AVR_
 #include <avr/power.h>
